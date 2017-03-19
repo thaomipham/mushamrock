@@ -51,4 +51,4 @@ Die Bombe bewegt sich im Gegensaz zu den anderen Actors nicht; Sie überprüft n
 
 #### Ball
 
-Bälle bewegen sich zufällig in der Welt und warten darauf, von einem Spieler gefressen zu werden. Sie bewegen sich permanent (
+Bälle bewegen sich zufällig in der Welt und warten darauf, von einem Spieler gefressen zu werden. Sie bewegen sich permanent, jeweils pro regelmäßigem Durchlauf der act()-Methode, um eine Einheit nach vorne und dreht sich, falls ein kleiner Zufallstest mit der Wahrscheinlichkeit 10% positiv ausfällt, um einen zufälligen Wert zwischen -30 und 30 (0 bis 60 - 30).
