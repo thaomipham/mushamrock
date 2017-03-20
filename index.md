@@ -22,7 +22,7 @@ Auf der Homepage von Greenfoot können Anfänger im Community-Forum nach Lösung
 In Greenfoot wird unterschieden zwischen sogenannten "World Classes" und "Actor Classes". Actors sind Objekte, die sich in der Welt befinden, unter "World Classes" befinden sich die Klassen, die den Hintergrund und die Welt allgemein definieren, also auch bestimmen, welche Actors am Anfang wo gespawnt werden. 
 
 
-## My First Stride Game
+## My First Stride Game<a name="#2"></a>
 
 Von dem online tutorial der University of Kent, sieht man, wie man innerhalb von sieben Minuten ein Spiel erstellen kann. Gezeigt wird der Bildschirm des Programmierers, welcher ohne Anleitung ein Spiel programmiert. Ich habe das Spiel dadurch ohne Vorkenntnisse mit Mühe replizieren können.
 
@@ -49,7 +49,8 @@ Wenn die Schlange den Marienkäfer bzw. Spieler gefressen hat, erscheint auf dem
 
 Cherries sind einfache Actors, die sich weder bewegen noch eine andere Funktion haben, außer gefressen zu werden.
 
-## Magic Mushroom
+
+## Magic Mushroom<a name="#3"></a>
 
 (Ich habe kein Drogenproblem, nur ich schaffe es anscheinend jedes Mal witzige Dorgen-verwandte Spiele zu kreieren.)
 
@@ -84,8 +85,19 @@ Wenn einer der Spieler die Bombe berührt, wird von hier aus ein Text in der Mit
 
 Die Bombe bewegt sich im Gegensaz zu den anderen Actors nicht; Sie überprüft nur, ob sie mit Mushroom oder Shamrock kollidiert. In diesem Fall wird ein Objekt Pham der Klasse explosion gespawnt, welches letztendlich nur ein Bild ist, das an der Position der Bombe erscheint. Gleichzeitig wird der jeweilige Spieler entfernt.
 
+
 #### Ball
 
 Genauso wie die Schlangen: 
 
 Bälle bewegen sich zufällig in der Welt und warten darauf, von einem Spieler gefressen zu werden. Sie bewegen sich permanent, jeweils pro regelmäßigem Durchlauf der act()-Methode, um eine Einheit nach vorne und drehen sich, falls ein kleiner Zufallstest mit der Wahrscheinlichkeit 10% positiv ausfällt, um einen zufälligen Wert zwischen -30 und 30 (0 bis 60 - 30).
+
+
+
+#### Bugs<a name="#6"></a>
+
+Das Spiel funktioniert einwandfrei, jedoch werden alle Actors zufällig gespawnt und dementsprechend können Actors schon miteinander agieren, ohne dass die Spieler etwas getan haben. 
+
+Zudem kann der Spieler, welcher länger seinen Actor am leben hält weitert spielen. Das Spiel geht weiter, der Text 'GAME OVER' wird nur angezeigt und der Emoji, welches die Explosion makiert verdeckt einen Teil des Spiels.
+
+
