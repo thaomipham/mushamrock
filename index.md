@@ -22,6 +22,41 @@ Auf der Homepage von Greenfoot können Anfänger im Community-Forum nach Lösung
 In Greenfoot wird unterschieden zwischen sogenannten "World Classes" und "Actor Classes". Actors sind Objekte, die sich in der Welt befinden, unter "World Classes" befinden sich die Klassen, die den Hintergrund und die Welt allgemein definieren, also auch bestimmen, welche Actors am Anfang wo gespawnt werden. 
 
 
+## My First Stride Game
+
+Von dem online tutorial der University of Kent, sieht man, wie man innerhalb von sieben Minuten ein Spiel erstellen kann. Gezeigt wird der Bildschirm des Programmierers, welcher ohne Anleitung ein Spiel programmiert. Ich habe das Spiel dadurch ohne Vorkenntnisse mit Mühe replizieren können.
+
+https://blogs.kent.ac.uk/mik/2016/10/stride-creating-a-game-in-7-minutes/
+
+Zuerst muss die Welt erstellt werden, es gibt nur eine Klasse ("MyWorld"), da der der Hintergrund immer gleich ist und auf der Ebene nicht viel mehr passiert. Diese Klasse enthält eine Methode "populateWorld", in der die einzelnen Actores gesetzt werden, dass heißt im Einzelnen wird immer erst eine Variable erstellt, die den individuellen Namen des Actores definiert, und danach mit der Funktion addObject() an einem definierten Ort mit X- und Y-Koordinaten positioniert. 
+((Code-Ausschnitt MyWorld populateWorld))
+
+### Actors
+
+In dem Spiel gibt es insgesamt drei Actors, den Ladybug, welches der Spieler kontrolliert, die Schlangen, die den Ladybug essen und die Kirschen, die vom Ladybug gegessen werden und Punkte erzeugen.
+
+#### Ladybug
+
+Der Marienkäfer bewegt sich durchgehend im Spiel und kann vom Spieler durch die rechts/links Pfeiltasten gesteuert werden. Durch die Bedingung, dass die Taste gedrückt wird, bewegt sich der Käfer im Spiel in die zugeordnete Richtung.
+
+#### Snakes
+
+Schlangen bewegen sich zufällig in der Welt und fressen den Spieler, wenn dieser die Schlange berührt. Sie bewegen sich permanent, jeweils pro regelmäßigem Durchlauf der act()-Methode, um eine Einheit nach vorne und drehen sich, falls ein kleiner Zufallstest mit der Wahrscheinlichkeit 10% positiv ausfällt, um einen zufälligen Wert zwischen -30 und 30 (0 bis 60 - 30).
+
+Wenn die Schlange den Marienkäfer bzw. Spieler gefressen hat, erscheint auf dem Bildschirm: "you loose". Da der Spieler keine Aktionen mehr betätigen kann, ist das Spiel für den Spieler vorbei und kann bei 'reset' wieder gestartet werden.
+
+#### Cherries
+
+Cherries sind einfache Actors, die sich weder bewegen noch eine andere Funktion haben, außer gefressen zu werden.
+
+## Magic Mushroom
+
+(Ich habe kein Drogenproblem, nur ich schaffe es anscheinend jedes Mal witzige Dorgen-verwandte Spiele zu kreieren.)
+
+Das Magic Mushroom Game, war die erste Version des Mushamrock-Spiels und hatte anfangs mehrere Actors, die ich alle außer den Fliegenpilz gelöscht habe. Der Mushroom sollte sich manuell bewegen können und durch die Pfeiltasten gesteuert werden (siehe Msuhroom and Shamrock). Der "tote" Mushroom sollte danach respawnen, was in der Welt definiert ist, dass der Mushrrom im Spielmittelfeld respawned. Die Welt wurde jedoch auf Java-umkonvertiert und eine bestimmte Anzahl von Mushroom pro Sekunde (viele, ich kann die nicht so schnell zählen) wird gespawnt. Die Pilze werden gespawnt und können sich bewegen und interessante Bilder gestalten. 
+
+
+
 ## Mushamrock<a name="#4"></a>
 Allgemeine Einleitung
 
@@ -51,4 +86,6 @@ Die Bombe bewegt sich im Gegensaz zu den anderen Actors nicht; Sie überprüft n
 
 #### Ball
 
-Bälle bewegen sich zufällig in der Welt und warten darauf, von einem Spieler gefressen zu werden. Sie bewegen sich permanent, jeweils pro regelmäßigem Durchlauf der act()-Methode, um eine Einheit nach vorne und dreht sich, falls ein kleiner Zufallstest mit der Wahrscheinlichkeit 10% positiv ausfällt, um einen zufälligen Wert zwischen -30 und 30 (0 bis 60 - 30).
+Genauso wie die Schlangen: 
+
+Bälle bewegen sich zufällig in der Welt und warten darauf, von einem Spieler gefressen zu werden. Sie bewegen sich permanent, jeweils pro regelmäßigem Durchlauf der act()-Methode, um eine Einheit nach vorne und drehen sich, falls ein kleiner Zufallstest mit der Wahrscheinlichkeit 10% positiv ausfällt, um einen zufälligen Wert zwischen -30 und 30 (0 bis 60 - 30).
