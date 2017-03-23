@@ -54,11 +54,11 @@ Cherries sind einfache Actors, die sich weder bewegen noch eine andere Funktion 
 
 ## Magic Mushroom<a name="3"></a>
 
-(Ich habe kein Drogenproblem, nur ich schaffe es anscheinend jedes Mal witzige Dorgen-verwandte Spiele zu kreieren.)
+(Ich habe kein Drogenproblem, nur ich schaffe es anscheinend jedes Mal witzige Drogen-verwandte Spiele zu kreieren.)
 
 Das Magic Mushroom Game, war die erste Version des Mushamrock-Spiels und hatte anfangs mehrere Actors, die ich alle außer den Fliegenpilz gelöscht habe. Der Mushroom sollte sich manuell bewegen können und durch die Pfeiltasten gesteuert werden (siehe Msuhroom and Shamrock). Der "tote" Mushroom sollte danach respawnen, was in der Welt definiert ist, dass der Mushrrom im Spielmittelfeld respawned. Die Welt wurde jedoch auf Java-umkonvertiert und eine bestimmte Anzahl von Mushroom pro Sekunde (viele, ich kann die nicht so schnell zählen) wird gespawnt. Die Pilze werden gespawnt und können sich bewegen und interessante Bilder gestalten. 
 
-![Magic Mushroom](/mushamrock/pictures/magic mushroom.PNG)
+![Magic Mushroom](/pictures/magic mushroom.PNG)
  
 ## Konzept<a name="4"></a>
  
