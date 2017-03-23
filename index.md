@@ -24,7 +24,7 @@ Auf der Homepage von Greenfoot können Anfänger im Community-Forum nach Lösung
 In Greenfoot wird unterschieden zwischen sogenannten "World Classes" und "Actor Classes". Actors sind Objekte, die sich in der Welt befinden, unter "World Classes" befinden sich die Klassen, die den Hintergrund und die Welt allgemein definieren, also auch bestimmen, welche Actors am Anfang wo gespawnt werden. 
 
 
-## My First Stride Game<a name="#2"></a>
+## My First Stride Game<a name="2"></a>
 
 Von dem online tutorial der University of Kent, sieht man, wie man innerhalb von sieben Minuten ein Spiel erstellen kann. Gezeigt wird der Bildschirm des Programmierers, welcher ohne Anleitung ein Spiel programmiert. Ich habe das Spiel dadurch ohne Vorkenntnisse mit Mühe replizieren können.
 
@@ -52,7 +52,7 @@ Wenn die Schlange den Marienkäfer bzw. Spieler gefressen hat, erscheint auf dem
 Cherries sind einfache Actors, die sich weder bewegen noch eine andere Funktion haben, außer gefressen zu werden.
 
 
-## Magic Mushroom<a name="#3"></a>
+## Magic Mushroom<a name="3"></a>
 
 (Ich habe kein Drogenproblem, nur ich schaffe es anscheinend jedes Mal witzige Dorgen-verwandte Spiele zu kreieren.)
 
@@ -63,7 +63,7 @@ Das Magic Mushroom Game, war die erste Version des Mushamrock-Spiels und hatte a
 
 Das Spiel sollte ein Multiplayer-Spiel für zwei Spieler sein, die jeweils
  
-## Mushamrock<a name="#4"></a>
+## Mushamrock<a name="4"></a>
  
 Für die Welt gibt es nur eine Klasse ("MyWorld"), da der der Hintergrund immer gleich ist und auf der Ebene nicht viel mehr passiert. Diese Klasse enthält eine Methode "populateWorld", in der die einzelnen Actores gesetzt werden, dass heißt im Einzelnen wird immer erst eine Variable erstellt, die den individuellen Namen des Actores definiert, und danach mit der Funktion addObject() an einem zufälligen Ort für X sowie Y kleiner gleich 500 positioniert. 
 ((Code-Ausschnitt MyWorld populateWorld))
@@ -98,7 +98,7 @@ Genauso wie die Schlangen:
 Bälle bewegen sich zufällig in der Welt und warten darauf, von einem Spieler gefressen zu werden. Sie bewegen sich permanent, jeweils pro regelmäßigem Durchlauf der act()-Methode, um eine Einheit nach vorne und drehen sich, falls ein kleiner Zufallstest mit der Wahrscheinlichkeit 10% positiv ausfällt, um einen zufälligen Wert zwischen -30 und 30 (0 bis 60 - 30).
  
  
-### Bugs<a name="#6"></a>
+### Bugs<a name="6"></a>
 
 Das Spiel funktioniert einwandfrei, jedoch werden alle Actors zufällig gespawnt und dementsprechend können Actors schon miteinander agieren, ohne dass die Spieler etwas getan haben. 
 
