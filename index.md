@@ -4,8 +4,8 @@
 
 - [My First Stride Game](#2)
 - [Magic Mushroom](#3)
-- [Konzept](#2)
-- [Mushamrock](#4)
+- [Konzept](#4)
+- [Mushamrock](#5)
 
   1. [Bugs](#6)
   
@@ -59,11 +59,12 @@ Cherries sind einfache Actors, die sich weder bewegen noch eine andere Funktion 
 Das Magic Mushroom Game, war die erste Version des Mushamrock-Spiels und hatte anfangs mehrere Actors, die ich alle außer den Fliegenpilz gelöscht habe. Der Mushroom sollte sich manuell bewegen können und durch die Pfeiltasten gesteuert werden (siehe Msuhroom and Shamrock). Der "tote" Mushroom sollte danach respawnen, was in der Welt definiert ist, dass der Mushrrom im Spielmittelfeld respawned. Die Welt wurde jedoch auf Java-umkonvertiert und eine bestimmte Anzahl von Mushroom pro Sekunde (viele, ich kann die nicht so schnell zählen) wird gespawnt. Die Pilze werden gespawnt und können sich bewegen und interessante Bilder gestalten. 
 
  
-## Konzept
-
-Das Spiel sollte ein Multiplayer-Spiel für zwei Spieler sein, die jeweils
+## Konzept<a name="4"></a>
  
-## Mushamrock<a name="4"></a>
+Das Spiel sollte ein Multiplayer-Spiel für zwei Spieler sein, die jeweils einen Actoren über eine Tastatur kontrollieren können. Die Actoren der Spieler agieren zwar nicht miteinander, dennoch konkorrieren sie miteinander, da sie beide die selben Bälle "fressen", um Punkte zu erhalten. Wenn einer der beiden Spieler eine Bombe berührt und demnach "stirbt", endet das Spiel.  
+ 
+ 
+## Mushamrock<a name="5"></a>
  
 Für die Welt gibt es nur eine Klasse ("MyWorld"), da der der Hintergrund immer gleich ist und auf der Ebene nicht viel mehr passiert. Diese Klasse enthält eine Methode "populateWorld", in der die einzelnen Actores gesetzt werden, dass heißt im Einzelnen wird immer erst eine Variable erstellt, die den individuellen Namen des Actores definiert, und danach mit der Funktion addObject() an einem zufälligen Ort für X sowie Y kleiner gleich 500 positioniert. 
 ((Code-Ausschnitt MyWorld populateWorld))
