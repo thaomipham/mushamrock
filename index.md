@@ -1,16 +1,18 @@
 ## Inhaltsverzeichnis
 
 - [Greenfoot](#1)
+
 - [My First Stride Game](#2)
 - [Magic Mushroom](#3)
+- [Konzept](#2)
 - [Mushamrock](#4)
-- [   ](#5)
+
   1. [Bugs](#6)
   
   
 ___________________
 
-## Greenfoot<a name="#1"></a>
+## Greenfoot<a name="1"></a>
 
 Greenfoot ist eine auf Java basierende Entwicklungsumgebung, die es Schülern und allgemein Programmieranfängern ermöglichen soll, erste Schritte in der Welt des Programmierens zu fassen. Innerhalb von Greenfoot benutze ich Stride, ein Blockbasiertes System, welches einem den direkten Umgang mit der Sprache Java erleichtern. 
 
@@ -56,19 +58,22 @@ Cherries sind einfache Actors, die sich weder bewegen noch eine andere Funktion 
 
 Das Magic Mushroom Game, war die erste Version des Mushamrock-Spiels und hatte anfangs mehrere Actors, die ich alle außer den Fliegenpilz gelöscht habe. Der Mushroom sollte sich manuell bewegen können und durch die Pfeiltasten gesteuert werden (siehe Msuhroom and Shamrock). Der "tote" Mushroom sollte danach respawnen, was in der Welt definiert ist, dass der Mushrrom im Spielmittelfeld respawned. Die Welt wurde jedoch auf Java-umkonvertiert und eine bestimmte Anzahl von Mushroom pro Sekunde (viele, ich kann die nicht so schnell zählen) wird gespawnt. Die Pilze werden gespawnt und können sich bewegen und interessante Bilder gestalten. 
 
+ 
+## Konzept
 
-
+Das Spiel sollte ein Multiplayer-Spiel für zwei Spieler sein, die jeweils
+ 
 ## Mushamrock<a name="#4"></a>
-Allgemeine Einleitung
-
-
+ 
 Für die Welt gibt es nur eine Klasse ("MyWorld"), da der der Hintergrund immer gleich ist und auf der Ebene nicht viel mehr passiert. Diese Klasse enthält eine Methode "populateWorld", in der die einzelnen Actores gesetzt werden, dass heißt im Einzelnen wird immer erst eine Variable erstellt, die den individuellen Namen des Actores definiert, und danach mit der Funktion addObject() an einem zufälligen Ort für X sowie Y kleiner gleich 500 positioniert. 
 ((Code-Ausschnitt MyWorld populateWorld))
 
 ### Actors
+
 Es gibt fünf verschiedene Actor Classes. ((BilD))
 
 #### Shamrock & Mushroom
+
 Shamrock und Mushroom sind die Spielcharaktere, die mit den Pfeiltasten, bzw. WASD gesteuert werden. Für die Bewegungen existiert eine Methode in der die einzelnen Tasten jeweils abgegriffen werden und darauf folgend entweder eine Bewegung ("move") oder eine Drehung um 5° ("turn") ausgeführt wird. Der Mushroom wird mit den Pfeiltasten gesteuert, Shamrock mit WASD.
 
 ((Code))
@@ -91,10 +96,9 @@ Die Bombe bewegt sich im Gegensaz zu den anderen Actors nicht; Sie überprüft n
 Genauso wie die Schlangen: 
 
 Bälle bewegen sich zufällig in der Welt und warten darauf, von einem Spieler gefressen zu werden. Sie bewegen sich permanent, jeweils pro regelmäßigem Durchlauf der act()-Methode, um eine Einheit nach vorne und drehen sich, falls ein kleiner Zufallstest mit der Wahrscheinlichkeit 10% positiv ausfällt, um einen zufälligen Wert zwischen -30 und 30 (0 bis 60 - 30).
-
-
-
-#### Bugs<a name="#6"></a>
+ 
+ 
+### Bugs<a name="#6"></a>
 
 Das Spiel funktioniert einwandfrei, jedoch werden alle Actors zufällig gespawnt und dementsprechend können Actors schon miteinander agieren, ohne dass die Spieler etwas getan haben. 
 
