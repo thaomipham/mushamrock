@@ -23,6 +23,8 @@ Auf der Homepage von Greenfoot können Anfänger im Community-Forum nach Lösung
 
 In Greenfoot wird unterschieden zwischen sogenannten "World Classes" und "Actor Classes". Actors sind Objekte, die sich in der Welt befinden, unter "World Classes" befinden sich die Klassen, die den Hintergrund und die Welt allgemein definieren, also auch bestimmen, welche Actors am Anfang wo gespawnt werden. 
 
+![](https://upload.wikimedia.org/wikipedia/commons/4/43/Greenfoot_Logo.jpg)
+
 
 ## My First Stride Game<a name="2"></a>
 
@@ -30,7 +32,7 @@ Von dem online tutorial der University of Kent, sieht man, wie man innerhalb von
 
 https://blogs.kent.ac.uk/mik/2016/10/stride-creating-a-game-in-7-minutes/
 
-![](https://github.com/thaomipham/mushamrock/blob/master/pictures/preview-1.php.jpeg)
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2021.54.59.png)
 
 Zuerst muss die Welt erstellt werden, es gibt nur eine Klasse ("MyWorld"), da der der Hintergrund immer gleich ist und auf der Ebene nicht viel mehr passiert. Diese Klasse enthält eine Methode "populateWorld", in der die einzelnen Actores gesetzt werden, dass heißt im Einzelnen wird immer erst eine Variable erstellt, die den individuellen Namen des Actores definiert, und danach mit der Funktion addObject() an einem definierten Ort mit X- und Y-Koordinaten positioniert. 
 ((Code-Ausschnitt MyWorld populateWorld))
@@ -43,15 +45,21 @@ In dem Spiel gibt es insgesamt drei Actors, den Ladybug, welches der Spieler kon
 
 Der Marienkäfer bewegt sich durchgehend im Spiel und kann vom Spieler durch die rechts/links Pfeiltasten gesteuert werden. Durch die Bedingung, dass die Taste gedrückt wird, bewegt sich der Käfer im Spiel in die zugeordnete Richtung.
 
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.00.21.png)
+
 #### Snakes
 
 Schlangen bewegen sich zufällig in der Welt und fressen den Spieler, wenn dieser die Schlange berührt. Sie bewegen sich permanent, jeweils pro regelmäßigem Durchlauf der act()-Methode, um eine Einheit nach vorne und drehen sich, falls ein kleiner Zufallstest mit der Wahrscheinlichkeit 10% positiv ausfällt, um einen zufälligen Wert zwischen -30 und 30 (0 bis 60 - 30).
 
 Wenn die Schlange den Marienkäfer bzw. Spieler gefressen hat, erscheint auf dem Bildschirm: "you loose". Da der Spieler keine Aktionen mehr betätigen kann, ist das Spiel für den Spieler vorbei und kann bei 'reset' wieder gestartet werden.
 
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.00.51.png)
+
 #### Cherries
 
 Cherries sind einfache Actors, die sich weder bewegen noch eine andere Funktion haben, außer gefressen zu werden.
+
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.00.40.png)
 
 
 ## Magic Mushroom<a name="3"></a>
