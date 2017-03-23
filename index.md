@@ -13,9 +13,6 @@
 ___________________
  
 
-![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.32.40.png)
-![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.33.15.png)
-
 
 ## Greenfoot<a name="1"></a>
 
@@ -79,12 +76,13 @@ Das Magic Mushroom Game, war die erste Version des Mushamrock-Spiels und hatte a
  
 Das Spiel sollte ein Multiplayer-Spiel für zwei Spieler sein, die jeweils einen Actoren über eine Tastatur kontrollieren können. Die Actoren der Spieler agieren zwar nicht miteinander, dennoch konkorrieren sie miteinander, da sie beide die selben Bälle "fressen", um Punkte zu erhalten. Wenn einer der beiden Spieler eine Bombe berührt und demnach "stirbt", endet das Spiel.  
  
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.32.12.png)
  
 ## Mushamrock<a name="5"></a>
  
 Für die Welt gibt es nur eine Klasse ("MyWorld"), da der der Hintergrund immer gleich ist und auf der Ebene nicht viel mehr passiert. Diese Klasse enthält eine Methode "populateWorld", in der die einzelnen Actores gesetzt werden, dass heißt im Einzelnen wird immer erst eine Variable erstellt, die den individuellen Namen des Actores definiert, und danach mit der Funktion addObject() an einem zufälligen Ort für X sowie Y kleiner gleich 500 positioniert. 
 
-![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.32.12.png)
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.32.40.png)
 
 ### Actors
 
@@ -116,8 +114,10 @@ Die Bombe bewegt sich im Gegensaz zu den anderen Actors nicht; Sie überprüft n
 Genauso wie die Schlangen: 
 
 Bälle bewegen sich zufällig in der Welt und warten darauf, von einem Spieler gefressen zu werden. Sie bewegen sich permanent, jeweils pro regelmäßigem Durchlauf der act()-Methode, um eine Einheit nach vorne und drehen sich, falls ein kleiner Zufallstest mit der Wahrscheinlichkeit 10% positiv ausfällt, um einen zufälligen Wert zwischen -30 und 30 (0 bis 60 - 30).
- 
- 
+
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.33.15.png)
+
+  
 ### Bugs<a name="6"></a>
 
 Das Spiel funktioniert einwandfrei, jedoch werden alle Actors zufällig gespawnt und dementsprechend können Actors schon miteinander agieren, ohne dass die Spieler etwas getan haben. 
