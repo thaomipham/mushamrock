@@ -13,7 +13,7 @@
 ___________________
 
 
-![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.33.58.png)
+
 ![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.34.36.png)
 ![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.34.53.png)
 ![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.32.40.png)
@@ -96,20 +96,20 @@ Es gibt fünf verschiedene Actor Classes. ((BilD))
 #### Shamrock & Mushroom
 
 Shamrock und Mushroom sind die Spielcharaktere, die mit den Pfeiltasten, bzw. WASD gesteuert werden. Für die Bewegungen existiert eine Methode in der die einzelnen Tasten jeweils abgegriffen werden und darauf folgend entweder eine Bewegung ("move") oder eine Drehung um 5° ("turn") ausgeführt wird. Der Mushroom wird mit den Pfeiltasten gesteuert, Shamrock mit WASD.
-
-
-
-In der Methode eat() wird für Mushroom bzw. Shamrock erst überprüft, ob sie gerade ein Objekt der Klasse Ball berühren (Funktion isTouching) und bei positivem Ergebnis der Ball gelöscht, dem Spieler ein Punkt hinzugefügt und die Gesamtpunktzahl als Text am Bildschirmrand eingeblendet. Ein neuer Ball wird mit der Methode respawnball() gespawnt. Der Respawn funktioniert genauso wie in der Welt-Klasse am Anfang des Spiels.
-
  
-
+In der Methode eat() wird für Mushroom bzw. Shamrock erst überprüft, ob sie gerade ein Objekt der Klasse Ball berühren (Funktion isTouching) und bei positivem Ergebnis der Ball gelöscht, dem Spieler ein Punkt hinzugefügt und die Gesamtpunktzahl als Text am Bildschirmrand eingeblendet. Ein neuer Ball wird mit der Methode respawnball() gespawnt. Der Respawn funktioniert genauso wie in der Welt-Klasse am Anfang des Spiels.
+ 
 Wenn einer der Spieler die Bombe berührt, wird von hier aus ein Text in der Mitte eingeblendet, der mit den altbekannten Worten "GAME OVER" das Spielende einleitet.
+
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.34.36.png)
 
  
 
 #### Bomb & Explosion
 
 Die Bombe bewegt sich im Gegensaz zu den anderen Actors nicht; Sie überprüft nur, ob sie mit Mushroom oder Shamrock kollidiert. In diesem Fall wird ein Objekt Pham der Klasse explosion gespawnt, welches letztendlich nur ein Bild ist, das an der Position der Bombe erscheint. Gleichzeitig wird der jeweilige Spieler entfernt.
+
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.33.58.png)
 
 
 #### Ball
