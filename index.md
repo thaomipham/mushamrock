@@ -37,7 +37,7 @@ https://blogs.kent.ac.uk/mik/2016/10/stride-creating-a-game-in-7-minutes/
 ![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2021.54.59.png)
 
 Zuerst muss die Welt erstellt werden, es gibt nur eine Klasse ("MyWorld"), da der der Hintergrund immer gleich ist und auf der Ebene nicht viel mehr passiert. Diese Klasse enthält eine Methode "populateWorld", in der die einzelnen Actores gesetzt werden, dass heißt im Einzelnen wird immer erst eine Variable erstellt, die den individuellen Namen des Actores definiert, und danach mit der Funktion addObject() an einem definierten Ort mit X- und Y-Koordinaten positioniert. 
- 
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.45.08.png)
 
 ### Actors
 
