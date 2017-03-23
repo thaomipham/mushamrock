@@ -12,6 +12,14 @@
   
 ___________________
 
+
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.33.58.png)
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.34.36.png)
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.34.53.png)
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.32.40.png)
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.33.15.png)
+
+
 ## Greenfoot<a name="1"></a>
 
 Greenfoot ist eine auf Java basierende Entwicklungsumgebung, die es Schülern und allgemein Programmieranfängern ermöglichen soll, erste Schritte in der Welt des Programmierens zu fassen. Innerhalb von Greenfoot benutze ich Stride, ein Blockbasiertes System, welches einem den direkten Umgang mit der Sprache Java erleichtern. 
@@ -35,7 +43,7 @@ https://blogs.kent.ac.uk/mik/2016/10/stride-creating-a-game-in-7-minutes/
 ![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2021.54.59.png)
 
 Zuerst muss die Welt erstellt werden, es gibt nur eine Klasse ("MyWorld"), da der der Hintergrund immer gleich ist und auf der Ebene nicht viel mehr passiert. Diese Klasse enthält eine Methode "populateWorld", in der die einzelnen Actores gesetzt werden, dass heißt im Einzelnen wird immer erst eine Variable erstellt, die den individuellen Namen des Actores definiert, und danach mit der Funktion addObject() an einem definierten Ort mit X- und Y-Koordinaten positioniert. 
-((Code-Ausschnitt MyWorld populateWorld))
+ 
 
 ### Actors
 
@@ -78,7 +86,8 @@ Das Spiel sollte ein Multiplayer-Spiel für zwei Spieler sein, die jeweils einen
 ## Mushamrock<a name="5"></a>
  
 Für die Welt gibt es nur eine Klasse ("MyWorld"), da der der Hintergrund immer gleich ist und auf der Ebene nicht viel mehr passiert. Diese Klasse enthält eine Methode "populateWorld", in der die einzelnen Actores gesetzt werden, dass heißt im Einzelnen wird immer erst eine Variable erstellt, die den individuellen Namen des Actores definiert, und danach mit der Funktion addObject() an einem zufälligen Ort für X sowie Y kleiner gleich 500 positioniert. 
-((Code-Ausschnitt MyWorld populateWorld))
+
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.32.12.png)
 
 ### Actors
 
@@ -88,15 +97,15 @@ Es gibt fünf verschiedene Actor Classes. ((BilD))
 
 Shamrock und Mushroom sind die Spielcharaktere, die mit den Pfeiltasten, bzw. WASD gesteuert werden. Für die Bewegungen existiert eine Methode in der die einzelnen Tasten jeweils abgegriffen werden und darauf folgend entweder eine Bewegung ("move") oder eine Drehung um 5° ("turn") ausgeführt wird. Der Mushroom wird mit den Pfeiltasten gesteuert, Shamrock mit WASD.
 
-((Code))
+
 
 In der Methode eat() wird für Mushroom bzw. Shamrock erst überprüft, ob sie gerade ein Objekt der Klasse Ball berühren (Funktion isTouching) und bei positivem Ergebnis der Ball gelöscht, dem Spieler ein Punkt hinzugefügt und die Gesamtpunktzahl als Text am Bildschirmrand eingeblendet. Ein neuer Ball wird mit der Methode respawnball() gespawnt. Der Respawn funktioniert genauso wie in der Welt-Klasse am Anfang des Spiels.
 
-((Code))
+ 
 
 Wenn einer der Spieler die Bombe berührt, wird von hier aus ein Text in der Mitte eingeblendet, der mit den altbekannten Worten "GAME OVER" das Spielende einleitet.
 
-((Coder))
+ 
 
 #### Bomb & Explosion
 
