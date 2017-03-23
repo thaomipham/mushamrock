@@ -11,11 +11,8 @@
   
   
 ___________________
+ 
 
-
-
-![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.34.36.png)
-![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.34.53.png)
 ![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.32.40.png)
 ![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.33.15.png)
 
@@ -109,8 +106,10 @@ Wenn einer der Spieler die Bombe berührt, wird von hier aus ein Text in der Mit
 
 Die Bombe bewegt sich im Gegensaz zu den anderen Actors nicht; Sie überprüft nur, ob sie mit Mushroom oder Shamrock kollidiert. In diesem Fall wird ein Objekt Pham der Klasse explosion gespawnt, welches letztendlich nur ein Bild ist, das an der Position der Bombe erscheint. Gleichzeitig wird der jeweilige Spieler entfernt.
 
-![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.33.58.png)
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.34.53.png)
 
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.33.58.png)
+ 
 
 #### Ball
 
