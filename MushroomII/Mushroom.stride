@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Mushroom" extends="Actor" extends-java="Actor" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields>
+        <variable access="private" type="int" type-java="int" name="score" value="0" value-java="0" enable="true"/>
+    </fields>
+    <constructors/>
+    <methods>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">Act - do whatever the Mushroom wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <blank/>
+                <if condition="Greenfoot.isKeyDown(&quot;up&quot;)" condition-java="Greenfoot.isKeyDown(&quot;up&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="move(1)" expression-java="move(1)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="Greenfoot.isKeyDown(&quot;left&quot;)" condition-java="Greenfoot.isKeyDown(&quot;left&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="turn(-5)" expression-java="turn(-5)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="Greenfoot.isKeyDown(&quot;down&quot;)" condition-java="Greenfoot.isKeyDown(&quot;down&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="move(-1)" expression-java="move(-1)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="Greenfoot.isKeyDown(&quot;right&quot;)" condition-java="Greenfoot.isKeyDown(&quot;right&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="turn(5)" expression-java="turn(5)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <blank/>
+                <call expression="eat()" expression-java="eat()" enable="true"/>
+                <blank/>
+                <call expression="explode()" expression-java="explode()" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="explode" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="getOneIntersectingObject(Bomb.class)!=null" condition-java="getOneIntersectingObject(Bomb.class) != null" enable="true">
+                    <ifStatements>
+                        <call expression="getWorld().removeObject(getOneIntersectingObject(Bomb.class))" expression-java="getWorld().removeObject(getOneIntersectingObject(Bomb.class))" enable="false"/>
+                        <call expression="getWorld().removeObject(this)" expression-java="getWorld().removeObject(this)" enable="false"/>
+                        <call expression="getWorld().showText(&quot;GAME OVER&quot;,300,200)" expression-java="getWorld().showText(&quot;GAME OVER&quot;, 300, 200)" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="eat" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="isTouching(Ball.class)" condition-java="isTouching(Ball.class)" enable="true">
+                    <ifStatements>
+                        <call expression="removeTouching(Ball.class)" expression-java="removeTouching(Ball.class)" enable="true"/>
+                        <assign dest="score" dest-java="score" src="score+1" src-java="score + 1" enable="true"/>
+                        <call expression="getWorld().showText(&quot;score(mushroom):&quot;+score,100,50)" expression-java="getWorld().showText(&quot;score(mushroom):&quot; + score, 100, 50)" enable="true"/>
+                        <call expression="respawnball()" expression-java="respawnball()" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="respawnball" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="Ball" type-java="Ball" name="balliball" value="new Ball()" value-java=" new Ball()" enable="true"/>
+                <call expression="getWorld().addObject(balliball,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="getWorld().addObject(balliball, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>

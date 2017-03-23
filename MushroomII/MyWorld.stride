@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="MyWorld" extends="World" extends-java="World" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class MyWorld.</javadoc>
+            <params/>
+            <throws/>
+            <delegate target="super" params="600,400,1" params-java="600, 400, 1"/>
+            <body>
+                <call expression="populateWorld()" expression-java="populateWorld()" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="public" type="void" type-java="void" name="populateWorld" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="Mushroom" type-java="Mushroom" name="m" value="new Mushroom()" value-java=" new Mushroom()" enable="true"/>
+                <call expression="addObject(m,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="addObject(m, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+                <variable type="Shamrock" type-java="Shamrock" name="s" value="new Shamrock()" value-java=" new Shamrock()" enable="true"/>
+                <call expression="addObject(s,300,300)" expression-java="addObject(s, 300, 300)" enable="true"/>
+                <blank/>
+                <variable type="Bomb" type-java="Bomb" name="bob0" value="new Bomb()" value-java=" new Bomb()" enable="true"/>
+                <call expression="addObject(bob0,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="addObject(bob0, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+                <variable type="Bomb" type-java="Bomb" name="bob1" value="new Bomb()" value-java=" new Bomb()" enable="true"/>
+                <call expression="addObject(bob1,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="addObject(bob1, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+                <blank/>
+                <variable type="Ball" type-java="Ball" name="balliball" value="new Ball()" value-java=" new Ball()" enable="true"/>
+                <call expression="addObject(balliball,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="addObject(balliball, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+                <variable type="Ball" type-java="Ball" name="ball" value="new Ball()" value-java=" new Ball()" enable="true"/>
+                <call expression="addObject(ball,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="addObject(ball, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+                <variable type="Ball" type-java="Ball" name="ballroll" value="new Ball()" value-java=" new Ball()" enable="true"/>
+                <call expression="addObject(ballroll,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="addObject(ballroll, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+                <variable type="Ball" type-java="Ball" name="thelastball" value="new Ball()" value-java=" new Ball()" enable="true"/>
+                <call expression="addObject(thelastball,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="addObject(thelastball, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>

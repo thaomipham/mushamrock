@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Bomb" extends="Actor" extends-java="Actor" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors/>
+    <methods>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">Act - do whatever the Bomb wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="isTouching(Mushroom.class)" condition-java="isTouching(Mushroom.class)" enable="true">
+                    <ifStatements>
+                        <variable type="explosion" type-java="explosion" name="pham" value="new explosion()" value-java=" new explosion()" enable="true"/>
+                        <call expression="getWorld().addObject(pham,getX(),getY())" expression-java="getWorld().addObject(pham, getX(), getY())" enable="true"/>
+                        <call expression="removeTouching(Mushroom.class)" expression-java="removeTouching(Mushroom.class)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="isTouching(Shamrock.class)" condition-java="isTouching(Shamrock.class)" enable="true">
+                    <ifStatements>
+                        <variable type="explosion" type-java="explosion" name="pham" value="new explosion()" value-java=" new explosion()" enable="true"/>
+                        <call expression="getWorld().addObject(pham,getX(),getY())" expression-java="getWorld().addObject(pham, getX(), getY())" enable="true"/>
+                        <call expression="removeTouching(Shamrock.class)" expression-java="removeTouching(Shamrock.class)" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+    </methods>
+</class>
