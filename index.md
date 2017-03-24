@@ -36,7 +36,7 @@ https://blogs.kent.ac.uk/mik/2016/10/stride-creating-a-game-in-7-minutes/
 
 ![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2021.54.59.png)
 
-Zuerst muss die Welt erstellt werden, es gibt nur eine Klasse ("MyWorld"), da der der Hintergrund immer gleich ist und auf der Ebene nicht viel mehr passiert. Diese Klasse enthält eine Methode "populateWorld", in der die einzelnen Actores gesetzt werden, dass heißt im Einzelnen wird immer erst eine Variable erstellt, die den individuellen Namen des Actores definiert, und danach mit der Funktion addObject() an einem definierten Ort mit X- und Y-Koordinaten positioniert. 
+Zuerst muss die Welt erstellt werden, es gibt nur eine Klasse ("MyWorld"), da der der Hintergrund immer gleich ist und auf der Ebene nicht viel mehr passiert. Diese Klasse enthält eine Methode "populateWorld", in der die einzelnen Actors gesetzt werden, dass heißt im Einzelnen wird immer erst eine Variable erstellt, die den individuellen Namen des Actors definiert, und danach mit der Funktion addObject() an einem definierten Ort mit X- und Y-Koordinaten positioniert. 
 ![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.45.08.png)
 
 ### Actors
@@ -74,19 +74,19 @@ Das Magic Mushroom Game, war die erste Version des Mushamrock-Spiels und hatte a
  
 ## Konzept<a name="4"></a>
  
-Das Spiel sollte ein Multiplayer-Spiel für zwei Spieler sein, die jeweils einen Actoren über eine Tastatur kontrollieren können. Die Actoren der Spieler agieren zwar nicht miteinander, dennoch konkorrieren sie miteinander, da sie beide die selben Bälle "fressen", um Punkte zu erhalten. Wenn einer der beiden Spieler eine Bombe berührt und demnach "stirbt", endet das Spiel.  
+Das Spiel sollte ein Multiplayer-Spiel für zwei Spieler sein, die jeweils einen Actoren über eine Tastatur kontrollieren können. Die Actors der Spieler agieren zwar nicht miteinander, dennoch konkorrieren sie miteinander, da sie beide die selben Bälle "fressen", um Punkte zu erhalten. Wenn einer der beiden Spieler eine Bombe berührt und demnach "stirbt", endet das Spiel.  
  
 ![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.32.12.png)
  
 ## Mushamrock<a name="5"></a>
  
-Für die Welt gibt es nur eine Klasse ("MyWorld"), da der der Hintergrund immer gleich ist und auf der Ebene nicht viel mehr passiert. Diese Klasse enthält eine Methode "populateWorld", in der die einzelnen Actores gesetzt werden, dass heißt im Einzelnen wird immer erst eine Variable erstellt, die den individuellen Namen des Actores definiert, und danach mit der Funktion addObject() an einem zufälligen Ort für X sowie Y kleiner gleich 500 positioniert. 
+Für die Welt gibt es nur eine Klasse ("MyWorld"), da der der Hintergrund immer gleich ist und auf der Ebene nicht viel mehr passiert. Diese Klasse enthält eine Methode "populateWorld", in der die einzelnen Actors gesetzt werden, dass heißt im Einzelnen wird immer erst eine Variable erstellt, die den individuellen Namen des Actors definiert, und danach mit der Funktion addObject() an einem zufälligen Ort für X sowie Y kleiner gleich 500 positioniert. 
 
 ![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-23%2022.32.40.png)
 
 ### Actors
 
-Es gibt fünf verschiedene Actor Classes. ((BilD))
+Es gibt fünf verschiedene Actor Classes. 
 
 #### Shamrock & Mushroom
 
@@ -122,6 +122,6 @@ Bälle bewegen sich zufällig in der Welt und warten darauf, von einem Spieler g
 
 Das Spiel funktioniert einwandfrei, jedoch werden alle Actors zufällig gespawnt und dementsprechend können Actors schon miteinander agieren, ohne dass die Spieler etwas getan haben. 
 
-Zudem kann der Spieler, welcher länger seinen Actor am leben hält weitert spielen. Das Spiel geht weiter, der Text 'GAME OVER' wird nur angezeigt und der Emoji, welches die Explosion makiert verdeckt einen Teil des Spiels.
+Zudem kann der Spieler, welcher länger seinen Actor am Leben hält, weiter spielen. Das Spiel geht weiter, der Text 'GAME OVER' wird nur angezeigt und der Emoji, welches die Explosion makiert verdeckt einen Teil des Spiels.
 
 
