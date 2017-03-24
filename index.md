@@ -127,3 +127,7 @@ Das Spiel funktioniert einwandfrei, jedoch werden alle Actors zufällig gespawnt
 Zudem kann der Spieler, welcher länger seinen Actor am Leben hält, weiter spielen. Das Spiel geht weiter, der Text 'GAME OVER' wird nur angezeigt und der Emoji, welches die Explosion makiert verdeckt einen Teil des Spiels.
 
 
+P.S.
+Spiel finden Sie unter:
+
+https://github.com/thaomipham/mushamrock/tree/master/MushroomII
