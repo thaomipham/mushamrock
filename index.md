@@ -88,6 +88,8 @@ Für die Welt gibt es nur eine Klasse ("MyWorld"), da der der Hintergrund immer 
 
 Es gibt fünf verschiedene Actor Classes. 
 
+![](https://github.com/thaomipham/mushamrock/blob/master/pictures/Screenshot%202017-03-24%2013.51.53.png)
+
 #### Shamrock & Mushroom
 
 Shamrock und Mushroom sind die Spielcharaktere, die mit den Pfeiltasten, bzw. WASD gesteuert werden. Für die Bewegungen existiert eine Methode in der die einzelnen Tasten jeweils abgegriffen werden und darauf folgend entweder eine Bewegung ("move") oder eine Drehung um 5° ("turn") ausgeführt wird. Der Mushroom wird mit den Pfeiltasten gesteuert, Shamrock mit WASD.
